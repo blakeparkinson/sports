@@ -10,6 +10,11 @@ var users = require('./routes/users');
 
 var app = express();
 
+var nba_key = 'hdgj9e9vs9hquzc6ds22wtdy';
+var nfl_key = 'b4cwkbyqfyq25fcruevj5hw2';
+var ncaa_fb_key = 'rajn798e9qe8a4av49h95qju';
+var mlb_key = 'wxf8qgjxs7ka6ay8ec249etg';
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -57,7 +62,7 @@ app.use(function(err, req, res, next) {
 });
 
 var request = require('request');
-request('https://api.sportsdatallc.org/ncaafb-t1/2013/REG/5/schedule.json?api_key=rajn798e9qe8a4av49h95qju', function (error, response, body) {
+request('https://api.sportsdatallc.org/nba-t3/games/2014/reg/schedule.json?api_key=' + nba_key, function (error, response, body) {
   if (!error && response.statusCode == 200) {
     console.log(body) // Print the google web page.
   }
