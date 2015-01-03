@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Select a Team:
+  form
+  select
+    for obj, i in teams  
+      option(value=i)=teams[i]
