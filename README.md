@@ -1,4 +1,4 @@
 sports
 ======
 
-some random thing honree and I are doing
+some silly nba app that displays rosters and does quizzing i guess
