@@ -3,7 +3,7 @@ var router = express.Router();
 var nba_teams = {
     'NOP': 'New Orleans Pelicans',
     'GSW': 'Golden State Warriors',
-    'SAS': 'San Antonio Spurts'
+    'SAS': 'San Antonio Spurs'
 }
 
 console.log(nba_teams);
