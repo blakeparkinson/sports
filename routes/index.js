@@ -6,11 +6,10 @@ var nba_teams = {
     'SAS': 'San Antonio Spurs'
 }
 
-console.log(nba_teams);
-
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { teams: nba_teams });
 });
 
 module.exports = router;
+

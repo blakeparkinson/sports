@@ -3,8 +3,8 @@ extends layout
 block content
   h1 Select a Team:
   form
-  select
+  select(id="teams")
     for obj, i in teams  
       option(value=i)=teams[i]
-  button(class="btn", data-action="bea").
+  button(class="btn", data-action="pick-team").
     Submit
