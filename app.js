@@ -61,15 +61,5 @@ app.use(function(err, req, res, next) {
     });
 });
 
-var request = require('request');
-request('https://api.sportsdatallc.org/nba-t3/league/hierarchy?api_key=' + nba_key, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    console.log(body) // Print the google web page.
-  }
-  else{
-    console.log(error)
-  }
-})
-
 
 module.exports = app;
