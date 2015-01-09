@@ -12,6 +12,7 @@ $(document).ready(function() {
 
 function fetchTeam(event) {
     var team = $('#teams option:selected').val();
+    console.log(team);
 
 }
 
