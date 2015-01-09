@@ -12,8 +12,7 @@ request('https://api.sportsdatallc.org/nba-t3/league/hierarchy.json?api_key=' + 
     var teams = formatTeams(json_response)
   }
   else{
-    console.log('hi');
-    console.log(error)
+    console.log('somethings really terrible happened');
   }
 })
 var nba_teams = {
@@ -27,11 +26,9 @@ var formatTeams = function(hierarchy_response){
 		divisions = [],
 		teams = [];
 	for (i=0;i<hierarchy_response.conferences.length;i++){
-		console.log(hierarchy_response.conferences[i].divisions.length);
 		for (j=0;j<hierarchy_response.conferences[i].divisions.length;j++){
 			console.log(hierarchy_response.conferences[i].divisions[j].teams.length);
 			for(k=0; k< hierarchy_response.conferences[i].divisions[j].length; k++){
-				console.log(hierarchy_response.conferences[i].divisions[j]);
 			}
 
 		}
